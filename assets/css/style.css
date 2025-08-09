@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Spitzkant";
+    src: url("/fonts/spitzkant.woff2") format("woff2");
+    font-style: normal;
+}
+
+.font-mi-fuente {
+    font-family: "Spitzkant", spitzkant;
+}
