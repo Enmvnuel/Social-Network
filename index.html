@@ -1,75 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Network</title>
 </head>
 
 <body class="bg-[url('./background.png')] bg-cover bg-center">
-    <nav class="mt-1">
-        <div class="flex justify-between items-center text-white p-4">
-            <div class="text-xl font-bold pl-4">Social Network</div>
-            <div class="flex space-x-6">
-                <a href="#" class="hover:text-gray-300">Discover</a>
-                <a href="#" class="hover:text-gray-300">Create Event</a>
-                <a href="#" class="hover:text-gray-300">My Network</a>
-            </div>
-            <div class="space-x-4 pr-4">
-                <a href="#" class="hover:text-gray-300">Login</a>
-                <button class="py-2 px-4 rounded-full border-white border-2"><a href="#">Get Started</a></button>
-            </div>
-        </div>
-    </nav>
-    <div class="flex justify-center items-center h-screen">
-        <div class="text-center text-white">
-            <h1 class="text-7xl mb-4 font-mi-fuente leading-tight">
-            Connect Through <br> Unforgettable Events
-            </h1>
-            <p class="text-lg mb-8 max-w-2xl mx-auto">
-            Discover, organize, and share events with people from your city and around the world.  
-            oin a vibrant community that lives every moment to the fullest.
-            </p>
-            <button class="bg-blue-700 py-3 px-7 rounded-full hover:bg-blue-600 transition">
-            <a href="#">Browse Upcoming Events</a>
-            </button>
-            <p class="mt-4 text-gray-300 text-sm">
-            Create your free profile and start exploring today.
-            </p>
-        </div>
-    </div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
-
-
-    <section class="flex flex-col items-center text-center px-4 py-20">
-    <div class="flex items-center gap-3 mt-8">
-    <img src="assets/face1.webp" alt="client" class="w-18 h-18 rounded-full  border-black -ml-2" />
-    <img src="assets/face2.webp" alt="client" class="w-18 h-18 rounded-full  border-black -ml-2" />
-    <span class="text-yellow-400 text-2xl ">★★★★★</span>
-    <span class="text-lg text-gray-300">Rated 5.0 on clutch</span>
-    </div>
-    </section>
-
-<footer>
-<section class="relative py-12 bg-gradient-to-b from-transparent to-black">
-        <div class="max-w-5xl mx-auto text-center px-4">
-        <p class="text-sm text-gray-400 uppercase tracking-widest mb-6">
-            Trusted by Leading Institutions
-        </p>
-
-        <div class="flex items-center justify-center flex-wrap gap-8">
-            <img src="assets/cibertec.webp" class="h-25 opacity-90" />
-            <img src="assets/idat.webp" class="h-19 opacity-90" />
-            <img src="assets/ipm.webp" class="h-12 opacity-90" />
-            <img src="assets/isil.webp" class="h-23 opacity-90" />
-            <img src="assets/senati.webp" " class=" h-11 opacity-90" />
-            <img src="assets/tecsup.webp" class="h-11 opacity-90" />
-        </div>
-    </div>
-    </footer>
-</section>
 
 </html>
