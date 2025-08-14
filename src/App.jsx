@@ -52,12 +52,12 @@ function App() {
             <section className="flex flex-col items-center text-center px-4 py-20">
                 <div className="flex items-center gap-3 mt-8">
                     <img
-                        src="src/assets/face1.webp"
+                        src="assets/face1.webp"
                         alt="client"
                         className="w-18 h-18 rounded-full  border-black -ml-2"
                     />
                     <img
-                        src="src/assets/face2.webp"
+                        src="assets/face2.webp"
                         alt="client"
                         className="w-18 h-18 rounded-full  border-black -ml-2"
                     />
@@ -77,27 +77,27 @@ function App() {
 
                         <div className="flex items-center justify-center flex-wrap gap-8">
                             <img
-                                src="src/assets/cibertec.webp"
+                                src="assets/cibertec.webp"
                                 className="h-25 opacity-90"
                             />
                             <img
-                                src="src/assets/idat.webp"
+                                src="assets/idat.webp"
                                 className="h-19 opacity-90"
                             />
                             <img
-                                src="src/assets/ipm.webp"
+                                src="assets/ipm.webp"
                                 className="h-12 opacity-90"
                             />
                             <img
-                                src="src/assets/isil.webp"
+                                src="assets/isil.webp"
                                 className="h-23 opacity-90"
                             />
                             <img
-                                src="src/assets/senati.webp"
+                                src="assets/senati.webp"
                                 className=" h-11 opacity-90"
                             />
                             <img
-                                src="src/assets/tecsup.webp"
+                                src="assets/tecsup.webp"
                                 className="h-11 opacity-90"
                             />
                         </div>
