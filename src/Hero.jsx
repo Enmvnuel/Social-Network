@@ -9,7 +9,7 @@ function Hero() {
             <div className="px-55">
                 <nav className="mt-7">
                     <div className="flex justify-between items-center text-white">
-                        <div className="mr-4 flex">
+                        <div className="mr-10 flex">
                             <img
                                 src="assets/img/logo.png"
                                 alt="Logo"
@@ -69,11 +69,11 @@ function Hero() {
                         "linear-gradient(180deg, #7C3AED 0%, rgb(91 0 255 / 98%) 0.01%, rgba(237, 78, 80, 0.2) 100%)",
                 }}
             ></div>
-            <div className="w-full px-10 relative">
+            <div className="w-full px-4 sm:px-6 md:px-10 lg:px-20 relative">
                 <img
                     src="assets/img/hero.png"
-                    alt=""
-                    className="w-full h-146 rounded-tr-3xl"
+                    alt="Hero"
+                    className="w-full h-48 sm:h-64 md:h-96 lg:h-[420px] xl:h-[420px] 2xl:h-[570px]"
                 />
             </div>
         </>
