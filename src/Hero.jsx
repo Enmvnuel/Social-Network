@@ -9,12 +9,15 @@ function Hero() {
             <div className="px-55">
                 <nav className="mt-7">
                     <div className="flex justify-between items-center text-white">
-                        <div className="mr-30">
+                        <div className="mr-4 flex">
                             <img
                                 src="assets/img/logo.png"
                                 alt="Logo"
                                 className="h-10"
                             />
+                            <span className="text-white text-2xl font-bold">
+                                BrainHub
+                            </span>
                         </div>
                         <div className="flex space-x-8 items-center">
                             <a href="#" className="hover:text-gray-300">
@@ -33,7 +36,7 @@ function Hero() {
                             <a href="#" className="hover:text-gray-300">
                                 FAQ
                             </a>
-                            <button className="bg-[#5852cb] py-2 px-4 rounded-full text-black  font-semibold">
+                            <button className="py-2 px-4 rounded-full text-white  font-semibold border border-gray-500">
                                 <a href="#">Get Started</a>
                             </button>
                         </div>
@@ -58,7 +61,15 @@ function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="w-full px-10 ">
+
+            <div
+                className="absolute m-auto blur-[300px] max-w-3xl h-[250px] -top-70 inset-0 sm:h-[100px] lg:h-[350px]"
+                style={{
+                    background:
+                        "linear-gradient(180deg, #7C3AED 0%, rgb(91 0 255 / 98%) 0.01%, rgba(237, 78, 80, 0.2) 100%)",
+                }}
+            ></div>
+            <div className="w-full px-10 relative">
                 <img
                     src="assets/img/hero.png"
                     alt=""
