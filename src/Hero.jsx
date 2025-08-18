@@ -36,8 +36,14 @@ function Hero() {
                             <a href="#" className="hover:text-gray-300">
                                 FAQ
                             </a>
-                            <button className="py-2 px-4 rounded-full text-white  font-semibold border border-gray-500">
-                                <a href="#">Get Started</a>
+                            <button
+                                className="group relative rounded-full p-px text-sm/6 text-white duration-300 hover:text-zinc-100 hover:shadow-glow font-semibold border border-gray-500 hover:scale-110 hover:transition-transform cursor-pointer"
+                                type="button"
+                            >
+                                <div className="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10">
+                                    Unete a BrainHub
+                                </div>
+                                <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-purple-400/0 via-indigo-400/90 to-pink-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
                             </button>
                         </div>
                     </div>

@@ -4,6 +4,8 @@ import "./index.css";
 import Hero from "./Hero.jsx";
 import Logos from "./Logos.jsx";
 import Information from "./Information.jsx";
+import Testimonial from "./Testimonial.jsx";
+import JoinWailtlist from "./JoinWaitlist.jsx";
 import Footer from "./Footer.jsx";
 
 createRoot(document.getElementById("root")).render(
@@ -11,6 +13,8 @@ createRoot(document.getElementById("root")).render(
         <Hero />
         <Logos />
         <Information />
+        <Testimonial />
+        <JoinWailtlist />
         <Footer />
     </StrictMode>
 );
