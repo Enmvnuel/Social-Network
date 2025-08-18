@@ -21,15 +21,15 @@ function Hero() {
                         </div>
                         <div className="flex space-x-8 items-center">
                             <a href="#" className="hover:text-gray-300">
-                                Discover
+                                Explora
                             </a>
                             <span className="text-gray-400">·</span>
                             <a href="#" className="hover:text-gray-300">
-                                Create Event
+                                Publicar Evento
                             </a>
                             <span className="text-gray-400">·</span>
                             <a href="#" className="hover:text-gray-300">
-                                Developers
+                                Comunidad
                             </a>
                         </div>
                         <div className="space-x-8">
@@ -50,9 +50,9 @@ function Hero() {
                 </nav>
                 <div className="flex flex-row justify-between items-end text-white mt-30 mb-10">
                     <div className="text-7xl">
-                        <h1>Plan.</h1>
-                        <h1>Manage.</h1>
-                        <h1>Build.</h1>
+                        <h1>Conecta.</h1>
+                        <h1>Crea.</h1>
+                        <h1>Crece.</h1>
                     </div>
                     <div className="flex flex-1 flex-row items-end justify-between ">
                         <div className="flex-1 flex justify-center pr-40">

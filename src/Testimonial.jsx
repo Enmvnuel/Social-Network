@@ -4,6 +4,16 @@ function Testimonial() {
             <section className="relative py-5">
                 <div className="container mx-auto sm:px-4">
                     <div className="relative w-10/12 pb-6 mx-auto mb-2 text-center sm:max-w-3xl sm:px-6">
+                        <img
+                            className="absolute top-0 -left-15 w-20 opacity-20"
+                            src="assets/img/quote-left.svg"
+                            alt=""
+                        ></img>
+                        <img
+                            className="absolute bottom-0 right-0 w-20 opacity-20"
+                            src="assets/img/quote-rigth.svg"
+                            alt=""
+                        ></img>
                         <div className="relative">
                             <h3 className="font-thin text-white sm:text-lg">
                                 Me encanta la idea de BrainHub para reunir a la
