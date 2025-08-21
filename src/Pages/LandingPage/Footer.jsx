@@ -75,7 +75,7 @@ function Footer() {
                             </a>
                         </div>
 
-                        <div className="text-xs text-zinc-500 max-w-full md:max-w-[40%] md:text-right">
+                        <div className="text-xs text-zinc-500 max-w-full md:max-w-[40%] md:text-right z-1">
                             <div>
                                 © {year} BrainHub — Conecta con eventos y
                                 comunidades de tecnología.
@@ -98,7 +98,7 @@ function Footer() {
                     </div>
                 </div>
                 <img
-                    className="absolute left-0 bottom-0 w-full object-cover pointer-events-none -z-10 opacity-85"
+                    className="absolute left-0 bottom-0 w-full object-cover pointer-events-none opacity-90"
                     src="/assets/img/gradient.svg"
                     alt=""
                     aria-hidden="true"
