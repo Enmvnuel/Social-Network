@@ -20,7 +20,7 @@ function Footer() {
 
                         <div className="flex items-center gap-4">
                             <a
-                                href="https://x.com"
+                                href="https://x.com/enmxh"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="X (antes Twitter)"
@@ -41,7 +41,7 @@ function Footer() {
                             </a>
 
                             <a
-                                href="https://www.linkedin.com"
+                                href="hhttps://www.linkedin.com/in/cristopher-arias-p/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="LinkedIn"
@@ -58,7 +58,7 @@ function Footer() {
                             </a>
 
                             <a
-                                href="https://github.com"
+                                href="https://github.com/enmvnuel"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="GitHub"

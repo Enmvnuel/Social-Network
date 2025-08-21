@@ -8,12 +8,14 @@ import Footer from "./LandingPage/Footer.jsx";
 function Home() {
     return (
         <>
-            <Hero />
-            <Logos />
-            <FeedEventos />
-            <Testimonial />
-            <JoinWailtlist />
-            <Footer />
+            <div className="bg-black">
+                <Hero />
+                <Logos />
+                <FeedEventos />
+                <Testimonial />
+                <JoinWailtlist />
+                <Footer />
+            </div>
         </>
     );
 }
