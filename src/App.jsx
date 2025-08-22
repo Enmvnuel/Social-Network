@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { SignedIn, SignIn } from "@clerk/clerk-react";
 
 import Home from "./pages/Home.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
