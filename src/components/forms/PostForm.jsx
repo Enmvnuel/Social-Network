@@ -185,7 +185,7 @@ function PostFormModal({ isOpen, onClose, onSubmit }) {
                                 onChange={handleInputChange}
                                 required
                                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                                placeholder="Ej: $500 MXN o Gratis"
+                                placeholder="Ej: S/. 100 o Gratis"
                             />
                         </div>
                         <div>

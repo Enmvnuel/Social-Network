@@ -127,7 +127,6 @@ function Sidebar() {
                 <PlusIcon className="h-6 w-6" />
             </button>
 
-            {/* Mobile Bottom Navigation */}
             <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50 px-2 py-2">
                 <div className="flex justify-around">
                     {navItems.map((item) => (

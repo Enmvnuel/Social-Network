@@ -141,12 +141,15 @@ function Hero() {
                                     /
                                 </span>
                             </div>
-                            <button className="bg-white py-2 px-4 rounded-full text-black font-semibold flex items-center gap-2 ml-0 md:ml-8">
+                            <a
+                                href="/login"
+                                className="bg-white py-2 px-4 rounded-full text-black font-semibold flex items-center gap-2 ml-0 md:ml-8"
+                            >
                                 Work
                                 <span className="text-black text-lg">
                                     &#8594;
                                 </span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
