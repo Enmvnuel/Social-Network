@@ -6,7 +6,6 @@ export default defineConfig({
     plugins: [react(), tailwindcss()],
     server: {
         hmr: {
-            overlay: false,
             protocol: "ws",
         },
         watch: {

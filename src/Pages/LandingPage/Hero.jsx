@@ -1,13 +1,17 @@
-import SignInPage from "./SignInPage";
-import { Routes, Route } from "react-router-dom";
+import { useAuth } from "@clerk/clerk-react";
 import { useNavigate } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 
 function Hero() {
+    const { isSignedIn } = useAuth();
     const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const handleLoginRedirect = () => {
         navigate("/login");
+    };
+
+    const handleDashboardRedirect = () => {
+        navigate("/dashboard");
     };
 
     return (
@@ -46,12 +50,18 @@ function Hero() {
                             </div>
                             <div className="hidden md:flex items-center space-x-4">
                                 <button
-                                    onClick={handleLoginRedirect}
+                                    onClick={
+                                        isSignedIn
+                                            ? handleDashboardRedirect
+                                            : handleLoginRedirect
+                                    }
                                     className="group relative rounded-full p-px text-sm/6 text-white duration-300 hover:text-zinc-100 hover:shadow-glow font-semibold border border-gray-500 hover:scale-110 hover:transition-transform cursor-pointer"
                                     type="button"
                                 >
                                     <div className="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10">
-                                        Unete a BrainHub
+                                        {isSignedIn
+                                            ? "Entrar a Dashboard"
+                                            : "Unete a BrainHub"}
                                     </div>
                                     <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-purple-400/0 via-indigo-400/90 to-pink-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
                                 </button>
@@ -98,12 +108,18 @@ function Hero() {
                                         FAQ
                                     </a>
                                     <button
-                                        onClick={handleLoginRedirect}
+                                        onClick={
+                                            isSignedIn
+                                                ? handleDashboardRedirect
+                                                : handleLoginRedirect
+                                        }
                                         className="group relative rounded-full p-px text-sm/6 text-white duration-300 hover:text-zinc-100 hover:shadow-glow font-semibold border border-gray-500 hover:scale-110 hover:transition-transform cursor-pointer"
                                         type="button"
                                     >
                                         <div className="relative z-10 rounded-full bg-zinc-950 px-4 py-1.5 ring-1 ring-white/10">
-                                            Unete a BrainHub
+                                            {isSignedIn
+                                                ? "Entrar a Dashboard"
+                                                : "Unete a BrainHub"}
                                         </div>
                                         <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-purple-400/0 via-indigo-400/90 to-pink-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
                                     </button>
