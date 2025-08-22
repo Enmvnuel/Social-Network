@@ -149,13 +149,13 @@ function Sidebar() {
                 </div>
             </nav>
 
-            <aside className="hidden lg:flex col-span-3 border-r border-gray-200 flex-col justify-between p-4 h-screen sticky top-0">
+            <aside className="hidden lg:flex col-span-2 border-r border-gray-200 flex-col justify-between p-4 h-screen sticky top-0">
                 <div>
                     <div className="flex items-center space-x-2 mb-8">
                         <img
                             src="assets/img/favicon-dark.png"
                             alt="BrainHub Logo"
-                            className="h-10 w-10"
+                            className="h-10 w-11    "
                         />
                         <span className="text-2xl font-bold">BrainHub</span>
                     </div>

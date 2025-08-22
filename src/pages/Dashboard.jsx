@@ -5,7 +5,7 @@ import Feed from "../components/dashboard/Feed";
 function Dashboard() {
     return (
         <div className="bg-white min-h-screen text-gray-900">
-            <div className="max-w-screen-xl mx-auto grid grid-cols-12 gap-0">
+            <div className="max-w-screen-xl mx-auto grid grid-cols-11 gap-0">
                 <LeftSidebar />
                 <Feed />
                 <RightSideBar />
