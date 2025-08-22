@@ -1,5 +1,3 @@
-import React from "react";
-
 function JoinWaitlist() {
     return (
         <section id="JoinWaitlist">
