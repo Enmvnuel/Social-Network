@@ -4,17 +4,18 @@ import PostComponent from "../common/PostComponent";
 function Feed() {
     return (
         <>
-            <main className="col-span-5 border-r border-gray-200">
-                <div className="sticky top-0 bg-white bg-opacity-80 backdrop-blur-sm border-b border-gray-200 px-4 py-3">
+            <main className="col-span-12 lg:col-span-6 border-r border-gray-200">
+                {/* Desktop Header - Solo visible en desktop */}
+                <div className="hidden lg:block sticky top-0 bg-white bg-opacity-80 backdrop-blur-sm border-b border-gray-200 px-4 py-3 z-10">
                     <h1 className="text-xl font-bold">Inicio</h1>
                 </div>
 
-                {/* Feed */}
-                <div className="divide-y divide-gray-200">
+                {/* Feed Content */}
+                <div className="divide-y divide-gray-200 lg:mt-0">
                     {postData.map((post, index) => (
                         <div
                             key={index}
-                            className="p-4 hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+                            className="p-3 sm:p-4 hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
                         >
                             <PostComponent
                                 id={index}
@@ -35,6 +36,9 @@ function Feed() {
                         </div>
                     ))}
                 </div>
+
+                {/* Spacing for mobile navigation */}
+                <div className="h-20 lg:h-0"></div>
             </main>
         </>
     );

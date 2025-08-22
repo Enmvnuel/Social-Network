@@ -13,7 +13,6 @@ function PostComponent({
     url,
 }) {
     const handleRedirect = (e) => {
-        // Evita seleccionar texto accidentalmente
         e.preventDefault();
         if (url) window.open(url, "_blank", "noopener,noreferrer");
     };
@@ -27,56 +26,53 @@ function PostComponent({
             rel="noopener noreferrer"
             target="_blank"
         >
-            {/* Avatar */}
             <div className="flex-shrink-0">
                 <img
-                    className="w-12 h-12 rounded-full"
+                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-full"
                     src={userPhoto}
                     alt={`${firstName} ${userName}`}
                 />
             </div>
 
-            {/* Content */}
             <div className="flex-1 min-w-0">
-                {/* Header */}
-                <div className="flex items-center space-x-1 mb-2">
-                    <h3 className="font-semibold text-gray-900 truncate">
-                        {firstName}{" "}
-                        <span className="text-gray-500">@{userName}</span>
+                <div className="flex items-center space-x-1 mb-2 flex-wrap">
+                    <h3 className="font-semibold text-gray-900 text-sm sm:text-base">
+                        {firstName}
                     </h3>
-                    <span className="text-gray-500">·</span>
-                    <span className="text-gray-500 text-sm">{datePost}</span>
+                    <span className="text-gray-500 font-normal text-sm sm:text-base">
+                        @{userName}
+                    </span>
+                    <span className="text-gray-400">·</span>
+                    <span className="text-gray-500 text-xs sm:text-sm">
+                        {datePost}
+                    </span>
                 </div>
 
-                {/* Title */}
-                <h2 className="text-lg font-medium text-gray-900 mb-2 leading-snug">
+                <h2 className="text-base sm:text-base font-medium text-gray-900 mb-2 leading-snug">
                     {title}
                 </h2>
 
-                {/* Description */}
-                <p className="text-gray-700 mb-3 leading-relaxed">
+                <p className="text-gray-700 mb-3 leading-relaxed text-sm sm:text-">
                     {description}
                 </p>
 
-                {/* Image */}
                 {img && (
                     <div className="mb-3">
                         <img
-                            className="w-full max-w-md rounded-xl border border-gray-200"
+                            className="w-100 rounded-xl border border-gray-200"
                             src={img}
                             alt="Imagen del evento"
                         />
                     </div>
                 )}
 
-                {/* Event Details */}
-                <div className="flex flex-wrap gap-4 text-sm text-gray-600 mb-3">
+                <div className="grid grid-cols-1 sm:flex sm:flex-wrap gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600 mb-3">
                     <div className="flex items-center space-x-1">
                         <span>📍</span>
-                        <span>{location}</span>
+                        <span className="truncate">{location}</span>
                     </div>
                     <div className="flex items-center space-x-1">
-                        <span>💰</span>
+                        <span>🎟️</span>
                         <span className="font-medium text-green-600">
                             {price}
                         </span>
@@ -87,7 +83,6 @@ function PostComponent({
                     </div>
                 </div>
 
-                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                     {tags &&
                         tags.map((tag, index) => (
@@ -100,16 +95,14 @@ function PostComponent({
                         ))}
                 </div>
 
-                {/* Actions */}
-                <div className="flex items-center justify-between max-w-md">
+                <div className="flex items-center justify-between max-w-xs sm:max-w-md">
                     <button
                         type="button"
-                        className="flex items-center space-x-2 text-gray-500 hover:text-red-500 hover:bg-red-50 px-3 py-2 rounded-full transition-all duration-200 group"
+                        className="flex items-center space-x-1 sm:space-x-2 text-gray-500 hover:text-red-500 hover:bg-red-50 px-2 sm:px-3 py-2 rounded-full transition-all duration-200 group"
                         tabIndex={-1}
                     >
-                        {/* ...icono y número de likes... */}
                         <svg
-                            className="w-5 h-5"
+                            className="w-4 h-4 sm:w-5 sm:h-5"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                         >
@@ -119,12 +112,14 @@ function PostComponent({
                                 clipRule="evenodd"
                             />
                         </svg>
-                        <span className="text-sm font-medium">12</span>
+                        <span className="text-xs sm:text-sm font-medium">
+                            12
+                        </span>
                     </button>
 
-                    <button className="flex items-center space-x-2 text-gray-500 hover:text-blue-500 hover:bg-blue-50 px-3 py-2 rounded-full transition-all duration-200 group">
+                    <button className="flex items-center space-x-1 sm:space-x-2 text-gray-500 hover:text-blue-500 hover:bg-blue-50 px-2 sm:px-3 py-2 rounded-full transition-all duration-200 group">
                         <svg
-                            className="w-5 h-5"
+                            className="w-4 h-4 sm:w-5 sm:h-5"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -136,12 +131,14 @@ function PostComponent({
                                 d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                             />
                         </svg>
-                        <span className="text-sm font-medium">5</span>
+                        <span className="text-xs sm:text-sm font-medium">
+                            5
+                        </span>
                     </button>
 
-                    <button className="flex items-center space-x-2 text-gray-500 hover:text-green-500 hover:bg-green-50 px-3 py-2 rounded-full transition-all duration-200 group">
+                    <button className="flex items-center space-x-1 sm:space-x-2 text-gray-500 hover:text-green-500 hover:bg-green-50 px-2 sm:px-3 py-2 rounded-full transition-all duration-200 group">
                         <svg
-                            className="w-5 h-5"
+                            className="w-4 h-4 sm:w-5 sm:h-5"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
