@@ -1,9 +1,9 @@
-import Hero from "./LandingPage/Hero.jsx";
-import Logos from "./LandingPage/Logos.jsx";
-import FeedEventos from "./LandingPage/FeedEventos.jsx";
-import Testimonial from "./LandingPage/Testimonial.jsx";
-import JoinWailtlist from "./LandingPage/JoinWaitlist.jsx";
-import Footer from "./LandingPage/Footer.jsx";
+import Hero from "../components/layout/Hero.jsx";
+import Logos from "../components/landing/Logos.jsx";
+import FeedEventos from "../components/landing/FeedEventos.jsx";
+import Testimonial from "../components/landing/Testimonial.jsx";
+import JoinWailtlist from "../components/landing/JoinWaitlist.jsx";
+import Footer from "../components/layout/Footer.jsx";
 
 function Home() {
     return (

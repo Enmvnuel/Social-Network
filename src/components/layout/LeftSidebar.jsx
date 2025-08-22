@@ -7,7 +7,8 @@ import {
 import { useUser } from "@clerk/clerk-react";
 
 import { useState } from "react";
-import PerfilClerk from "../Other/UserButton";
+import PerfilClerk from "../common/UserButton";
+import PostFormModal from "../forms/PostForm";
 
 const HomeIcon = (props) => (
     <svg
@@ -86,19 +87,26 @@ function Sidebar() {
     const { user } = useUser();
 
     const [activeTab, setActiveTab] = useState("Inicio");
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const navItems = [
         { name: "Inicio", icon: HomeIcon },
         { name: "Explorar", icon: HashIcon },
         { name: "Perfil", icon: UserIcon },
     ];
+
+    const handlePostSubmit = (postData) => {
+        console.log("Nueva publicación:", postData);
+        // Aquí puedes agregar la lógica para enviar los datos a tu API o estado global
+    };
+
     return (
         <>
             <aside className="col-span-2 border-r border-gray-200 flex flex-col justify-between p-4 h-screen sticky top-0">
                 <div>
                     <div className="flex items-center space-x-2 mb-8">
                         <img
-                            src="assets/img/logo.png"
+                            src="assets/img/favicon.png"
                             alt="BrainHub Logo"
                             className="h-10 w-10"
                         />
@@ -126,7 +134,10 @@ function Sidebar() {
                             ))}
                         </ul>
                     </nav>
-                    <button className="w-full mt-6 bg-indigo-600 text-white font-bold text-lg py-3 px-4 rounded-full hover:bg-indigo-700 transition-colors duration-200">
+                    <button
+                        onClick={() => setIsModalOpen(true)}
+                        className="w-full mt-6 bg-indigo-600 text-white font-bold text-lg py-3 px-4 rounded-full hover:bg-indigo-700 transition-colors duration-200 cursor-pointer"
+                    >
                         Publicar
                     </button>
                 </div>
@@ -141,6 +152,13 @@ function Sidebar() {
                     </SignedOut>
                 </div>
             </aside>
+
+            {/* Modal del formulario */}
+            <PostFormModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                onSubmit={handlePostSubmit}
+            />
         </>
     );
 }

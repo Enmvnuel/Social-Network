@@ -3,31 +3,31 @@ function Logos() {
         <>
             <section id="Logos">
                 <div className="bg-red">
-                    <div className="flex justify-center items-center 2xl:gap-x-50 object-fill w-full xl:gap-x-30 mb-20">
+                    <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-30 2xl:gap-50 object-fill w-full mb-20 px-4 py-6">
                         <img
-                            className="h-8 "
+                            className="h-6 sm:h-7 md:h-8"
                             src="assets/img/logos/google.png"
-                            alt=""
+                            alt="Google"
                         />
                         <img
-                            className="h-7"
+                            className="h-5 sm:h-6 md:h-7"
                             src="assets/img/logos/meta.png"
-                            alt=""
+                            alt="Meta"
                         />
                         <img
-                            className="h-8"
+                            className="h-6 sm:h-7 md:h-8"
                             src="assets/img/logos/microsoft.png"
-                            alt=""
+                            alt="Microsoft"
                         />
                         <img
-                            className="h-8"
+                            className="h-6 sm:h-7 md:h-8"
                             src="assets/img/logos/openai.png"
-                            alt=""
+                            alt="OpenAI"
                         />
                         <img
-                            className="h-5"
+                            className="h-4 sm:h-5 md:h-5"
                             src="assets/img/logos/oracle.png"
-                            alt=""
+                            alt="Oracle"
                         />
                     </div>
                 </div>

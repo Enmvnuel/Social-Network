@@ -15,12 +15,12 @@ function JoinWaitlist() {
                 </p>
 
                 <div className="mt-8">
-                    <button
-                        type="button"
+                    <a
+                        href="/login"
                         className="inline-flex items-center rounded-full bg-zinc-950 px-5 py-2 text-sm font-medium text-zinc-100 hover:shadow-lg transition"
                     >
                         Unete a BrainHub
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>

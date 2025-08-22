@@ -1,18 +1,32 @@
-function Post({
-    userPhoto,
-    userName,
-    firstName,
+function PostComponent({
     title,
     description,
     img,
-    dateevent,
-    datepost,
+    dateEvent,
     location,
     price,
     tags,
+    userPhoto,
+    firstName,
+    userName,
+    datePost,
+    url,
 }) {
+    const handleRedirect = (e) => {
+        // Evita seleccionar texto accidentalmente
+        e.preventDefault();
+        if (url) window.open(url, "_blank", "noopener,noreferrer");
+    };
+
     return (
-        <div className="flex space-x-3">
+        <a
+            href={url}
+            onClick={handleRedirect}
+            className="flex space-x-3 no-underline hover:bg-gray-50 rounded-xl transition-colors duration-200 cursor-pointer p-2"
+            tabIndex={0}
+            rel="noopener noreferrer"
+            target="_blank"
+        >
             {/* Avatar */}
             <div className="flex-shrink-0">
                 <img
@@ -31,7 +45,7 @@ function Post({
                         <span className="text-gray-500">@{userName}</span>
                     </h3>
                     <span className="text-gray-500">·</span>
-                    <span className="text-gray-500 text-sm">{datepost}</span>
+                    <span className="text-gray-500 text-sm">{datePost}</span>
                 </div>
 
                 {/* Title */}
@@ -69,7 +83,7 @@ function Post({
                     </div>
                     <div className="flex items-center space-x-1">
                         <span>📅</span>
-                        <span>{dateevent}</span>
+                        <span>{dateEvent}</span>
                     </div>
                 </div>
 
@@ -88,7 +102,12 @@ function Post({
 
                 {/* Actions */}
                 <div className="flex items-center justify-between max-w-md">
-                    <button className="flex items-center space-x-2 text-gray-500 hover:text-red-500 hover:bg-red-50 px-3 py-2 rounded-full transition-all duration-200 group">
+                    <button
+                        type="button"
+                        className="flex items-center space-x-2 text-gray-500 hover:text-red-500 hover:bg-red-50 px-3 py-2 rounded-full transition-all duration-200 group"
+                        tabIndex={-1}
+                    >
+                        {/* ...icono y número de likes... */}
                         <svg
                             className="w-5 h-5"
                             fill="currentColor"
@@ -137,8 +156,8 @@ function Post({
                     </button>
                 </div>
             </div>
-        </div>
+        </a>
     );
 }
 
-export default Post;
+export default PostComponent;

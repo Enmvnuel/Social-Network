@@ -20,16 +20,18 @@ function Hero() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <nav className="pt-7">
                         <div className="flex justify-between items-center text-white">
-                            <div className="flex items-center">
-                                <img
-                                    src="assets/img/logo.png"
-                                    alt="Logo"
-                                    className="h-10"
-                                />
-                                <span className="text-white text-2xl font-bold ml-2">
-                                    BrainHub
-                                </span>
-                            </div>
+                            <a href="..">
+                                <div className="flex items-center">
+                                    <img
+                                        src="assets/img/favicon.png"
+                                        alt="Logo"
+                                        className="h-10"
+                                    />
+                                    <span className="text-white text-2xl font-bold ml-2">
+                                        BrainHub
+                                    </span>
+                                </div>
+                            </a>
                             <div className="hidden md:flex space-x-8 items-center">
                                 <a href="#" className="hover:text-gray-300">
                                     Explora
@@ -134,8 +136,8 @@ function Hero() {
                             <h1>Crece.</h1>
                         </div>
                         <div className="flex flex-1 flex-row items-end justify-between mt-8 md:mt-0">
-                            <div className="flex-1 flex justify-center pr-0 md:pr-40">
-                                <span className="text-4xl text-white text-center">
+                            <div className="hidden md:flex flex-1 justify-center pr-0 md:pr-40">
+                                <span className="text-4xl text-white text-center ">
                                     /
                                 </span>
                             </div>

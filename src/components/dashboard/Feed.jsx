@@ -1,0 +1,43 @@
+import { postData } from "../../data/initialPosts";
+import PostComponent from "../common/PostComponent";
+
+function Feed() {
+    return (
+        <>
+            <main className="col-span-5 border-r border-gray-200">
+                <div className="sticky top-0 bg-white bg-opacity-80 backdrop-blur-sm border-b border-gray-200 px-4 py-3">
+                    <h1 className="text-xl font-bold">Inicio</h1>
+                </div>
+
+                {/* Feed */}
+                <div className="divide-y divide-gray-200">
+                    {postData.map((post, index) => (
+                        <div
+                            key={index}
+                            className="p-4 hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+                        >
+                            <PostComponent
+                                id={index}
+                                userPhoto={post.userPhoto}
+                                userName={post.userName}
+                                firstName={post.firstName}
+                                lastName={post.lastName}
+                                title={post.title}
+                                description={post.description}
+                                img={post.img}
+                                dateEvent={post.dateEvent}
+                                datePost={post.datePost}
+                                location={post.location}
+                                price={post.price}
+                                tags={post.tags}
+                                url={post.url}
+                            />
+                        </div>
+                    ))}
+                </div>
+            </main>
+        </>
+    );
+}
+
+export default Feed;
