@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import { SignedIn, SignIn } from "@clerk/clerk-react";
 
-import Home from "./pages_temp/Home.jsx";
-import Dashboard from "./pages_temp/Dashboard.jsx";
+import Home from "./pages/Home.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
 import ProtectedRoute from "./routes/ProtectedRoute.jsx";
-import SignInPage from "./pages_temp/SignInPage.jsx";
-import SignUpPage from "./pages_temp/SignUpPage.jsx";
-import Privacy from "./pages_temp/Privacy.jsx";
-import Terms from "./pages_temp/Terms.jsx";
+import SignInPage from "./pages/SignInPage.jsx";
+import SignUpPage from "./pages/SignUpPage.jsx";
+import Privacy from "./pages/Privacy.jsx";
+import Terms from "./pages/Terms.jsx";
 
 function App() {
     return (
