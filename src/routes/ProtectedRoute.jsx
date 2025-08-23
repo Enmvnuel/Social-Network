@@ -13,7 +13,11 @@ const ProtectedRoute = ({ children }) => {
     }, [isLoaded, isSignedIn, navigate]);
 
     if (!isLoaded) {
-        return <div>Cargando...</div>;
+        return (
+            <div className="min-h-screen flex items-center justify-center p-4">
+                Cargando...
+            </div>
+        );
     }
 
     if (isSignedIn) {
