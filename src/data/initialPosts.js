@@ -1,6 +1,7 @@
 export const postData = [
     {
-        userPhoto: "https://randomuser.me/api/portraits/women/65.jpg",
+        userPhoto:
+            "https://pbs.twimg.com/profile_images/1954600691554471937/WAm1yV3c_400x400.jpg",
         userName: "valeria_ux",
         firstName: "Valeria",
         lastName: "Torres",
@@ -9,7 +10,7 @@ export const postData = [
             "Taller vivencial para descubrir cómo el networking estratégico impulsa el crecimiento emprendedor, creando conexiones auténticas y oportunidades. ¡Incluye dinámicas prácticas y speed networking!",
         img: "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/event-covers/5x/b0f349ee-9f9b-427b-b87d-a5b58cb1ecff.png",
         dateEvent: "28 de agosto de 2025",
-        datePost: "20 de agosto de 2025",
+        datePost: "2d",
         location: "Open PUCP, San Miguel, Provincia de Lima",
         price: "Gratis",
         tags: ["emprendimiento", "networking"],
@@ -25,7 +26,7 @@ export const postData = [
             "Primer Hands-ON en Lima para aprender activamente a construir una marca personal más allá del CV, fusionando comunicación eficaz con habilidades de AI para potenciar tu carrera o negocio.",
         img: "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/event-covers/1i/4d1dcccc-6ba9-4d4b-9163-96c6eff648f7.png",
         dateEvent: "4 de septiembre de 2025",
-        datePost: "1 de septiembre de 2025",
+        datePost: "1w",
         location: "Jr. Junín 355, Lima, Provincia de Lima",
         price: "Gratis",
         tags: [
@@ -38,7 +39,8 @@ export const postData = [
         url: "https://lu.ma/41uhjvfb",
     },
     {
-        userPhoto: "https://randomuser.me/api/portraits/women/44.jpg",
+        userPhoto:
+            "https://pbs.twimg.com/profile_images/1924649874726772736/8orupTQR_400x400.jpg",
         userName: "camila_data",
         firstName: "Camila",
         lastName: "Gomez",
@@ -47,7 +49,7 @@ export const postData = [
             "Vive la cumbre del ecosistema IA en Lima: pitch de startups, masterclass de Google, panel de expertos y networking para transformar el futuro. Conéctate con líderes, innovadores y aprende de los mejores.",
         img: "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,background=white,quality=75,width=400,height=400/event-covers/o4/d954cab4-77ea-4241-899e-82b38c2ab52f.png",
         dateEvent: "6 de septiembre de 2025",
-        datePost: "3 de septiembre de 2025",
+        datePost: "3d",
         location: "UTEC, Barranco, Lima",
         price: "Gratis",
         tags: [

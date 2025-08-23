@@ -28,16 +28,34 @@ function PostComponent({
         >
             <div className="flex-shrink-0">
                 <img
-                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-full"
+                    className="w-10 h-10 sm:w-10 sm:h-10 rounded-full"
                     src={userPhoto}
                     alt={`${firstName} ${userName}`}
                 />
             </div>
 
             <div className="flex-1 min-w-0">
-                <div className="flex items-center space-x-1 mb-2 flex-wrap">
-                    <h3 className="font-semibold text-gray-900 text-sm sm:text-base">
+                <div className="flex items-center space-x-1 flex-wrap">
+                    <h3 className="font-bold text-gray-900 text-sm sm:text-base">
                         {firstName}
+                        <svg
+                            className="inline w-4 h-4 ml-1 mb-0.5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="100"
+                            height="100"
+                            viewBox="0 0 48 48"
+                        >
+                            <polygon
+                                fill="#42a5f5"
+                                points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884"
+                            ></polygon>
+                            <polygon
+                                fill="#fff"
+                                points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926"
+                            ></polygon>
+                        </svg>
                     </h3>
                     <span className="text-gray-500 font-normal text-sm sm:text-base">
                         @{userName}

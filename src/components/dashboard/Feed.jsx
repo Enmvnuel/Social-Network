@@ -4,7 +4,7 @@ import PostComponent from "../common/PostComponent";
 function Feed() {
     return (
         <>
-            <main className="col-span-12 lg:col-span-6 border-r border-gray-200">
+            <main className="col-span-12 lg:col-span-5 border-r border-gray-200">
                 {/* Desktop Header - Solo visible en desktop */}
                 <div className="hidden lg:block sticky top-0 bg-white bg-opacity-80 backdrop-blur-sm border-b border-gray-200 px-4 py-3 z-10">
                     <h1 className="text-xl font-bold">Inicio</h1>
