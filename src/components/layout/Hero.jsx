@@ -37,16 +37,22 @@ function Hero() {
                                     Explora
                                 </a>
                                 <span className="text-gray-400">·</span>
-                                <a href="#" className="hover:text-gray-300">
+                                <a
+                                    href="/dashboard"
+                                    className="hover:text-gray-300"
+                                >
                                     Publicar Evento
                                 </a>
                                 <span className="text-gray-400">·</span>
-                                <a href="#" className="hover:text-gray-300">
+                                <a
+                                    href="/dashboard"
+                                    className="hover:text-gray-300"
+                                >
                                     Comunidad
                                 </a>
                                 <span className="text-gray-400">·</span>
 
-                                <a href="#" className="hover:text-gray-300">
+                                <a href="/faq" className="hover:text-gray-300">
                                     FAQ
                                 </a>
                             </div>

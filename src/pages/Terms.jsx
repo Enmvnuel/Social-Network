@@ -1,5 +1,3 @@
-import React from "react";
-
 function Terms() {
     return (
         <div className="bg-zinc-950 text-white min-h-screen font-sans">
