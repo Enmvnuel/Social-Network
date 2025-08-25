@@ -1,8 +1,8 @@
-function Card({ image, day, month, title, description, url }) {
+function Card({ img, day, month, title, description }) {
     return (
         <div className="w-full max-w-sm mx-auto bg-gradient-to-br from-zinc-900/10 to-zinc-800/50 backdrop-blur-md rounded-3xl overflow-hidden shadow-[0_10px_30px_rgba(2,6,23,0.6)] group hover:shadow-[0_20px_40px_rgba(2,6,23,0.7)] transition-transform duration-300 hover:-translate-y-3 border border-white/6">
             <a
-                href={url}
+                href="/dashboard"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500/40"
@@ -10,7 +10,7 @@ function Card({ image, day, month, title, description, url }) {
                 <div className="relative h-48 sm:h-56 overflow-hidden">
                     <img
                         className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500"
-                        src={image}
+                        src={img}
                         alt={title}
                         loading="lazy"
                     />

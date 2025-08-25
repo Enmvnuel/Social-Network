@@ -1,4 +1,5 @@
-import { cardData } from "../../data/landingPageData.js";
+// import { cardData } from "../../data/landingPageData.js";
+import { postData } from "../../data/initialPosts.js";
 import Card from "../common/Card.jsx";
 
 function FeedEventos() {
@@ -16,16 +17,15 @@ function FeedEventos() {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 place-items-center mx-auto max-w-7xl text-black">
-                    {cardData.map((card, index) => (
+                    {postData.map((card, index) => (
                         <Card
                             key={index}
                             id={index}
-                            image={card.image}
+                            img={card.img}
                             day={card.day}
                             month={card.month}
                             title={card.title}
                             description={card.description}
-                            url={card.url}
                         />
                     ))}
                 </div>
